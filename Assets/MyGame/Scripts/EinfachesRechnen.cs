@@ -54,7 +54,7 @@ public class EinfachesRechnen : MonoBehaviour
 
     private char GetRandomOperator()
     {
-        int randomOperator = Random.Range(0, 3); 
+        int randomOperator = Random.Range(0, 4); 
 
         switch (randomOperator)
         {
@@ -64,6 +64,8 @@ public class EinfachesRechnen : MonoBehaviour
                 return '-';
             case 2:
                 return '*';
+            case 3:
+                return '/';
             default:
                 return '+';
         }
@@ -79,6 +81,8 @@ public class EinfachesRechnen : MonoBehaviour
                 return operand1 - operand2;
             case '*':
                 return operand1 * operand2;
+            case '/':
+                return operand1 / operand2;
             default:
                 return 0;
         }

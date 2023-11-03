@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/MyGame/Scenes/Primzahlen.unity
     guid: 5616c7c796fe6694eb6eab036f1c6a79
   - enabled: 1
-    path: Assets/MyGame/Scenes/Teilbarkeit.unity
+    path: Assets/MyGame/Scenes/Primzahlen2.unity
     guid: 06051b4370552674eb4a0f7f40e6ecc7
   - enabled: 1
     path: Assets/MyGame/Scenes/Zahlenarten.unity
     guid: a1f7bfbfdec32ae4180be9c1b20db4c3
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Teilbarkeit.unity
+    guid: f2d4596c360c5e04a8923d1de36bb391
   m_configObjects: {}

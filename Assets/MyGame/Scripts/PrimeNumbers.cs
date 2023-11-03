@@ -9,7 +9,9 @@ public class PrimeNumbers : MonoBehaviour
     public Button isPrimeButton;
     public Button isNotPrimeButton;
 
-    private int randomNumber;
+    
+
+    public int randomNumber;
     private bool isPrime;
 
     private void Start()
@@ -49,7 +51,7 @@ public class PrimeNumbers : MonoBehaviour
         }
         else
         {
-            resultText.text = "Falsch!";
+            resultText.text = "Falsch!, Primzahlen sind nur durch 1 und sich selber Teilbar";
         }
     }
 
