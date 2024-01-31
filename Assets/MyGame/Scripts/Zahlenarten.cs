@@ -5,10 +5,10 @@ using TMPro;
 
 public class Zahlenarten : MonoBehaviour
 {
-    public float r;
+    public float randomFloat;
     public int zufall;
     public TextMeshProUGUI Zahlen, richtigText;
-    public int index;
+    public int newInt;
 
 
     private void Start()
@@ -20,15 +20,15 @@ public class Zahlenarten : MonoBehaviour
     {
         if (Zahl > 0 && Mathf.Approximately(Zahl, Mathf.Floor(Zahl)))
         {
-            index = 2;
+            newInt = 2;
         }
         else if (Mathf.Approximately(Zahl, Mathf.Floor(Zahl)))
         {
-            index = 1;
+            newInt = 1;
         }
         else
         {
-            index = 3;
+            newInt = 3;
         }
     }
 
@@ -37,19 +37,19 @@ public class Zahlenarten : MonoBehaviour
         zufall = Random.Range(0, 2);
         if (zufall == 1)
         {
-            r = Random.Range(-100, 100);
+            randomFloat = Random.Range(-100, 100);
         }
         else
         {
-            r = Random.value * 100;
+            randomFloat = Random.value * 100;
         }
-        Zahlen.text = r.ToString();
-        ZahlenArt(r);
+        Zahlen.text = randomFloat.ToString();
+        ZahlenArt(randomFloat);
     }
 
     public void TrueFalse(int a)
     {
-        if (a == index)
+        if (a == newInt)
         {
             richtigText.text = "Richtig";
         }
